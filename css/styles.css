@@ -19,6 +19,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--title-color);
 }
+
 .list {
     list-style: none;
 }
@@ -54,6 +55,9 @@ body {
 .site-nav a:focus {
     color: var(--accent-color);
 }
+.site-nav a.current {
+    color: var(--accent-color);
+} 
 /* styles contacts */
 .mail, 
 .phone {
