@@ -1,7 +1,7 @@
 /* title-color #212121 
 accent-color #2196F3
 text-color #757575
-background-main #F5F5F5
+background-main #ffffff
 background-footer #2F303A
 background-OurTeam #F5F4FA */
 :root {
@@ -10,21 +10,63 @@ background-OurTeam #F5F4FA */
     --logo-studio-footer: #ffffff;
     --title-color: #212121;
     --text-color: #757575;
-    --background-main: #fff;
+    --background-main: #ffffff;
     --background-footer: #2F303A;
     --background-hero: #2F303A;
 }
-body {
-    background-color: var(--background-main);
-    font-family: 'Roboto', sans-serif;
-    color: var(--title-color);
+.h1, 
+.h2, 
+.h3, 
+.h4 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
-
+ul, 
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
 .list {
     list-style: none;
 }
 .link {
     text-decoration: none;
+}
+img {
+    display: block;
+}
+button {
+    cursor: pointer;
+}
+/* HEADER */
+.page-header-container {
+    display: flex;
+    align-items: baseline;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.site-nav {
+    display: flex;
+    column-gap: 50px;
+}
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+    column-gap: 50px;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+body {
+    background-color: var(--background-main);
+    font-family: 'Roboto', sans-serif;
+    color: var(--title-color);
 }
 /* styles logo */
 .logo {
@@ -34,6 +76,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-right: 96px;
 }
 .logo-web {
     color: var(--accent-color);
@@ -94,7 +137,6 @@ body {
     line-height: 1.88;
     color: #ffffff;
     background-color: var(--accent-color);
-    cursor: pointer;
 }
 /* styles our team */
 .our-team {
