@@ -14,10 +14,10 @@ background-OurTeam #F5F4FA */
     --background-footer: #2F303A;
     --background-hero: #2F303A;
 }
-.h1, 
-.h2, 
-.h3, 
-.h4 {
+h1, 
+h2, 
+h3, 
+h4 {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -26,6 +26,10 @@ ol {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .list {
     list-style: none;
@@ -62,7 +66,6 @@ button {
     padding-left: 15px;
     padding-right: 15px;
 }
-
 body {
     background-color: var(--background-main);
     font-family: 'Roboto', sans-serif;
@@ -119,15 +122,21 @@ body {
 /* styles hero */
 .hero {
     background-color: var(--background-hero);
+    height: 600px;
+    padding-top: 200px;
+    text-align: center;
 }
 .title-hero {
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: #ffffff;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-right: auto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 696px;
 }
 .btn-order {
     width: 216px;
@@ -137,31 +146,64 @@ body {
     line-height: 1.88;
     color: #ffffff;
     background-color: var(--accent-color);
+    border-radius: 4px;
 }
-/* styles our team */
-.our-team {
-    background-color: #f4f5fa;
+/*========== ОСОБЛИВОСТІ ============*/
+.feature {
+    display: flex;
+    column-gap: 30px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
-/* styles feature */
 .title-section {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-bottom: 50px;
+}
+.title-invisible {
+    border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+    margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
 }
 .subtitle {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    width: 270px;
 }
-/* Our team */
+/*========== ЧИМ МИ ЗАЙМАЄМОСЯ ======*/
+.activity {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+/*========== НАША КОМАНДА ===========*/
+.our-team {
+    background-color: #f4f5fa;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.employees {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 .employee, .career {
     font-size: 16px;
     line-height: 1.19;
@@ -171,6 +213,8 @@ body {
 .employee {
     font-weight: 500;
     color: var(--title-color);
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 .career {
     color: var(--text-color);
@@ -178,6 +222,8 @@ body {
 /* styles footer */
 .footer {
     background-color: var(--background-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .logo-studio-footer {
     color: var(--logo-studio-footer);
@@ -188,9 +234,16 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-top: 20px;
+}
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 9px;
 }
 .address {
     color: #ffffff;
+    
 }
 .mail-footer, .phone-footer {
     color: rgba(255, 255, 255, 0.6);
