@@ -43,12 +43,15 @@ img {
 button {
     cursor: pointer;
 }
-/* HEADER */
+/*========== HEADER =========*/
 .page-header-container {
     display: flex;
     align-items: baseline;
     padding-top: 32px;
     padding-bottom: 32px;
+}
+.page-header {
+    border-bottom: 1px solid #ECECEC;
 }
 .site-nav {
     display: flex;
@@ -71,10 +74,9 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--title-color);
 }
-/* styles logo */
+/*======== styles logo =======*/
 .logo {
     font-family: 'Raleway', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -119,11 +121,11 @@ body {
 .phone:focus {
     color: var(--accent-color);
 }
-/* styles hero */
+/*=========== HERO ============*/
 .hero {
     background-color: var(--background-hero);
-    height: 600px;
     padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
 }
 .title-hero {
@@ -139,28 +141,31 @@ body {
     width: 696px;
 }
 .btn-order {
-    width: 216px;
-    height: 50px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.88;
+    line-height: 1.875;
     color: #ffffff;
-    background-color: var(--accent-color);
+    background-color: #2196F3;
+    border: 0;
     border-radius: 4px;
+    padding: 10px 32px;
+    letter-spacing: 0.06em;
 }
 /*========== ОСОБЛИВОСТІ ============*/
 .feature {
-    display: flex;
-    column-gap: 30px;
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.feature-items {
+    display: flex;
+    column-gap: 30px;
 }
 .title-section {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .title-invisible {
     border: 0;
@@ -182,16 +187,19 @@ body {
 }
 .text {
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--text-color);
     width: 270px;
 }
 /*========== ЧИМ МИ ЗАЙМАЄМОСЯ ======*/
 .activity {
+    padding-bottom: 94px;
+}
+.activity-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 30px;   
 }
 /*========== НАША КОМАНДА ===========*/
 .our-team {
@@ -218,8 +226,9 @@ body {
 }
 .career {
     color: var(--text-color);
+    padding-bottom: 30px;
 }
-/* styles footer */
+/*========== FOOTER ===========*/
 .footer {
     background-color: var(--background-footer);
     padding-top: 60px;
@@ -236,17 +245,13 @@ body {
     letter-spacing: 0.03em;
     margin-top: 20px;
 }
-.contacts-list {
-    display: flex;
-    flex-direction: column;
-    column-gap: 9px;
-}
 .address {
     color: #ffffff;
-    
 }
-.mail-footer, .phone-footer {
+.mail-footer, 
+.phone-footer {
     color: rgba(255, 255, 255, 0.6);
+    margin-top: 9px;
 }
 .address:hover,
 .address:focus,
@@ -256,7 +261,7 @@ body {
 .phone-footer:focus {
 color: var(--accent-color);
 }
-/* Portfolio */
+/*========== ПОРТФОЛІО ========= */
 .button-filter {
     font-weight: 500;
     font-size: 16px;
@@ -264,11 +269,28 @@ color: var(--accent-color);
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    height: 38px;
+    padding: 6px 22px;
+}
+.btn-filter-allcards {
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .button-filter:hover, 
 .button-filter:focus {
     background-color: var(--accent-color);
     color: #ffffff;
+}
+
+.text-portfolio-card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border: 1px solid #EEEEEE;
+    border-top: 0px;
 }
 .title-portfolio {
     font-size: 18px;
@@ -280,5 +302,17 @@ color: var(--accent-color);
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--text-color);
+}
+.btn-filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
  
