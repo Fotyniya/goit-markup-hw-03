@@ -62,6 +62,7 @@ button {
     margin-left: auto;
     column-gap: 50px;
 }
+/* ============ MAIN ============ */
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -73,6 +74,10 @@ body {
     background-color: var(--background-main);
     font-family: 'Roboto', sans-serif;
     color: var(--title-color);
+}
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 /*======== styles logo =======*/
 .logo {
@@ -152,10 +157,6 @@ body {
     letter-spacing: 0.06em;
 }
 /*========== ОСОБЛИВОСТІ ============*/
-.feature {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 .feature-items {
     display: flex;
     column-gap: 30px;
@@ -194,7 +195,7 @@ body {
 }
 /*========== ЧИМ МИ ЗАЙМАЄМОСЯ ======*/
 .activity {
-    padding-bottom: 94px;
+    padding-top: 0px;
 }
 .activity-cards {
     display: flex;
@@ -204,8 +205,6 @@ body {
 /*========== НАША КОМАНДА ===========*/
 .our-team {
     background-color: #f4f5fa;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 .employees {
     display: flex;
@@ -259,7 +258,7 @@ body {
 .mail-footer:focus,
 .phone-footer:hover,
 .phone-footer:focus {
-color: var(--accent-color);
+    color: var(--accent-color);
 }
 /*========== ПОРТФОЛІО ========= */
 .button-filter {
@@ -284,7 +283,6 @@ color: var(--accent-color);
     background-color: var(--accent-color);
     color: #ffffff;
 }
-
 .text-portfolio-card {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -312,7 +310,5 @@ color: var(--accent-color);
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
  
