@@ -259,7 +259,7 @@ section {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-.contacts-item:not(:last-child) a {
+.contacts-item:not(:last-child) {
     margin-bottom: 9px;
 }
 .address {
@@ -280,6 +280,9 @@ section {
     color: var(--accent-color);
 }
 /*========== ПОРТФОЛІО ========= */
+.btn-filter-container {
+    margin-bottom: 50px;
+}
 .button-filter {
     font-weight: 500;
     font-size: 16px;
@@ -292,7 +295,6 @@ section {
     background-color: #F5F4FA;
     height: 38px;
     padding: 6px 22px;
-    margin-bottom: 50px;
 }
 .btn-filter-allcards {
     padding-left: 25px;
